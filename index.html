@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Homepage</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <button id="back-to-top" class="btn btn-primary">Back to Top</button>
+    <button id="toggle-dark-mode" class="btn btn-secondary">Toggle Dark Mode</button>
+    
+    <div class="container">
+        <h1>Welcome to My Homepage</h1>
+        <p>This is the main page of my website.</p>
+        
+        <!-- Image Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/intro.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/project.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://media.licdn.com/dms/image/v2/D5616AQFSMnkOxM3zbA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1719353819651?e=1738195200&v=beta&t=sBIIuX8N2H8b9ESs0bp8z3jKG7zML6yVBaYqZSCR9TY" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <!-- Modal Popup -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+            Learn More About Me
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About Me</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Hello! I'm Kamal Raj Timilsena, a CS student. I have a passion for creating things that would be helpful for others and learning new things.</p>
+                        <p>Here are a few things about me:</p>
+                        <ul>
+                            <li>Education: Undergraduate (Anticipated Graduation Date: May 2028)</li>
+                            <li>Skills: Python, Java, HTML/CSS, C++, Go, JavaScript, SQL, NumPy, GCP, Tensorflow, Git, Bootstrap, Spring Boot</li>
+                            <li>Experience: Teacher, Electrical Engineering Intern</li>
+                            <li>Hobbies: Badminton, Chess, Cricket, Hiking, Repairing Tech and doing DIY projects</li>
+                        </ul>
+                        <p>Feel free to explore my website to learn more about my projects and interests. Thank you for visiting!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Accordion -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Education
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Undergraduate at The University of Virginia's College at Wise, Anticipated Graduation Date: May 2028</p>
+                        <p>Major: Computer Science</p>
+                        <p>Minor: Business Administration</p>
+                        <p>Concentration: CyberSecurity and Data Science</p>
+                        <p>Relevant Courses: ART 2400 - Digital Imaging, BUS 1850 - Foundation of Business, CSC 1010 - Introduction to Programmin in Python, ENG 1010 - Composition, MTH 1010 - Algebra, MTH 1110 - PRECALCULUS I, CSC 1180 - Foundations of Programming in C++, ENG 1020 - Composition, SWE 1790 - Engineering Leadership, HON 3950 - Special Honor Topics, MTH 1210 - Precalculus II, CSC 2180 - Data Structures, MTH 2180 - Applied Probability & Statistics, ACC 2010 - Principles of Financial Accounting </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Skills
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Programming Languages: Python, Java, HTML/CSS, C++, Go, JavaScript, SQL</li>
+                            <li>Frameworks and Libraries: NumPy, TensorFlow, Bootstrap, Spring Boot</li>
+                            <li>Tools: Git, GCP</li>
+                            <li>Soft Skills: Problem-solving, Teamwork, Communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Experience
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Teacher at Janasewa Secondary School</p>
+                        <p>Electrical Engineering Intern at Nepal Electricity Authority</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Hobbies
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Badminton, Chess, Cricket, Hiking, Repairing Tech, and DIY projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tooltips -->
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+            Tooltip on top
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+            Tooltip on right
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+            Tooltip on bottom
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+            Tooltip on left
+        </button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

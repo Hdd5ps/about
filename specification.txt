@@ -1,0 +1,44 @@
+HTML Tags:
+1. <nav>
+2. <ul>
+3. <li>
+4. <a>
+5. <div>
+6. <h1>
+7. <p>
+8. <form>
+9. <input>
+10. <textarea>
+11. <button>
+12. <img>
+13. <ol>
+14. <li>
+15. <span>
+
+CSS Selectors and Properties:
+1. body { font-family, margin, padding, box-sizing }
+2. h1 { margin-top }
+3. .navbar { margin-bottom }
+4. .container { max-width, margin }
+5. form { margin-top }
+6. #back-to-top { display, position, bottom, right, z-index }
+7. #toggle-dark-mode { position, bottom, left, z-index }
+8. .dark-mode { background-color, color }
+9. .dark-mode .navbar { background-color }
+10. .dark-mode .btn-primary { background-color, border-color }
+
+JavaScript:
+1. Smooth scrolling for navigation links.
+2. Back to Top button functionality.
+3. Toggle Dark Mode functionality.
+4. Form validation.
+5. Initialize Bootstrap tooltips.
+6. Initialize Bootstrap carousel.
+
+Bootstrap:
+1. Used for the navigation bar.
+2. Used for the carousel.
+3. Used for the modal.
+4. Used for the accordion.
+5. Used for tooltips.
+6. Used for form styling.
