@@ -15,26 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Back to Top button functionality
-    const backToTopButton = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
+    // Back to Top Button
+    document.getElementById('back-to-top').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    backToTopButton.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    // Toggle Dark Mode functionality
-    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-    toggleDarkModeButton.addEventListener('click', () => {
+    // Toggle Dark Mode
+    document.getElementById('toggle-dark-mode').addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
 

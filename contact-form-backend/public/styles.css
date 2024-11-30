@@ -45,16 +45,23 @@ form button {
     z-index: 1000;
 }
 
+/* styles.css */
+
 .dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
 
 .dark-mode .navbar {
-    background-color: #1f1f1f;
+    background-color: #333333;
 }
 
-.dark-mode .btn-primary {
-    background-color: #333;
-    border-color: #333;
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
